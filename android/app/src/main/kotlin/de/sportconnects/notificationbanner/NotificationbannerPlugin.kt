@@ -35,7 +35,6 @@ class NotificationbannerPlugin : MethodCallHandler, FlutterPlugin {
 
         when (call.method) {
             "getNotificationBanner" -> {
-                val path = call.argument<String>("view")
                 getNotificationBanner(context)
             }
             else -> {
