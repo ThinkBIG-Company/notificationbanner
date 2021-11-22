@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class FlutterAlertDemo {
+class NotificationBanner {
   static const MethodChannel _channel =
       const MethodChannel('notificationbanner');
 
