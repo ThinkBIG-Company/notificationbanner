@@ -14,13 +14,13 @@ import java.util.*
 import com.shasin.notificationbanner.Banner;
 
 /**
- * NotificationbannerPlugin
+ * NotificationBannerPlugin
  */
-class NotificationbannerPlugin : MethodCallHandler, FlutterPlugin {
+class NotificationBannerPlugin : MethodCallHandler, FlutterPlugin {
 
     private var _context: Context? = null
     private var _channel: MethodChannel? = null
-    private val TAG = "NotificationbannerPlugin"
+    private val TAG = "NotificationBannerPlugin"
     var channelName = "notificationbanner"
 
     @SuppressLint("LongLogTag")
@@ -69,7 +69,7 @@ class NotificationbannerPlugin : MethodCallHandler, FlutterPlugin {
 
         @JvmStatic
         fun registerWith(registrar: Registrar) {
-            val instance = NotificationbannerPlugin()
+            val instance = NotificationBannerPlugin()
             instance.init(registrar.context(), registrar.messenger())
         }
     }
